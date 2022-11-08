@@ -42,8 +42,10 @@
 </head>
 
 <BODY>
-    <canvas id="pinkboard"></canvas>
-    <div class="tuyet"><span>Lê Ánh Tuyết</span></div>
+    <div class="container">
+        <canvas id="pinkboard"></canvas>
+        <div class="tuyet"><span>Lê Ánh Tuyết</span></div>
+    </div>
     <script>
         /*
        * Settings
@@ -267,8 +269,8 @@
 
             // handle (re-)sizing of the canvas
             function onResize() {
-                canvas.width = canvas.clientWidth;
-                canvas.height = canvas.clientHeight;
+                canvas.width = canvas.clientWidth + 100;
+                canvas.height = canvas.clientHeight + 100;
             }
             window.onresize = onResize;
 
